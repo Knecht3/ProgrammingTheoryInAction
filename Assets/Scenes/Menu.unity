@@ -1766,7 +1766,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 619172768}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:

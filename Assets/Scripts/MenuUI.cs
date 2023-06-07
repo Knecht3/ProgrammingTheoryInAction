@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
-public class MenuUI : MonoBehaviour
+public class MenuUI : UI
 {
     public TextMeshProUGUI userNameInputText;
 
@@ -27,18 +24,6 @@ public class MenuUI : MonoBehaviour
     public void StartNew()
     {
         SceneManager.LoadScene(1);
-    }
-
-    // Exit the game
-    public void Exit()
-    {
-        MainManager.Instance.userName = MainManager.Instance.userNameTemp;
-        MainManager.Instance.SaveData();
-#if UNITY_EDITOR
-        EditorApplication.ExitPlaymode();
-#else
-        Application.Quit();
-#endif
     }
 
     void GetUserName()
