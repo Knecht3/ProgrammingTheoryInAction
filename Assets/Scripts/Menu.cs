@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class Menu : MonoBehaviour
     // Exit the game
     public void Exit()
     {
+        MainManager.Instance.userName = MainManager.Instance.userNameTemp;
         MainManager.Instance.SaveData();
 #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
@@ -42,6 +43,6 @@ public class Menu : MonoBehaviour
 
     void GetUserName()
     {
-        MainManager.Instance.userName = inputUserName.text;
+        MainManager.Instance.userNameTemp = inputUserName.text;
     }
 }

@@ -6,11 +6,12 @@ using System.IO;
 public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
+    public string userNameTemp;
     public string userName;
 
     private void Awake()
     {
-        if(Instance != null)
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
