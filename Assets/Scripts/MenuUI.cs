@@ -7,9 +7,9 @@ using TMPro;
 using UnityEditor;
 #endif
 
-public class Menu : MonoBehaviour
+public class MenuUI : MonoBehaviour
 {
-    public TextMeshProUGUI inputUserName;
+    public TextMeshProUGUI userNameInputText;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +43,6 @@ public class Menu : MonoBehaviour
 
     void GetUserName()
     {
-        MainManager.Instance.userNameTemp = inputUserName.text;
+        MainManager.Instance.userNameTemp = userNameInputText.text;
     }
 }

@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa235be7868f69248b453b0bf8a5778b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputUserName: {fileID: 834315966}
+  userNameInputText: {fileID: 834315966}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,4 +1859,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48f7ff475f0d08041a5bc0ee911dbd4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  userNameTemp: 
   userName: 
