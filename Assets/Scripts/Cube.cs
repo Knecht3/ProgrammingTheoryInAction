@@ -4,8 +4,15 @@ using UnityEngine;
 
 public abstract class Cube : MonoBehaviour
 {
-    bool isClicked = false;
+    private bool isClicked = false;
+    private AudioSource audioSource;
+    public AudioClip audioClip;
     [SerializeField] private float rotateSpeed = 6.0f;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +47,15 @@ public abstract class Cube : MonoBehaviour
         }
     }
 
-    protected abstract void PlayMusic();
+    void PlayMusic()
+    {
+        audioSource.PlayOneShot(audioClip, 1.0f);
+    }
 
-    protected abstract void StopMusic();
+    void StopMusic()
+    {
+        audioSource.Stop();
+    }
 
     protected virtual void Rotate(float rotateSpeed)
     {

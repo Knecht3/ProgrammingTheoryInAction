@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 5405539546265827388, guid: 13ff566620ddfa94ea22afc2efbab5b5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13ff566620ddfa94ea22afc2efbab5b5, type: 3}
 --- !u!4 &27619037 stripped
@@ -286,7 +290,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &27619040
+--- !u!114 &27619044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,8 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3edbfb319f48bdd4daa881a0eacfd07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 6
   audioClip: {fileID: 8300000, guid: 400858cc265da644f8cf6977efd5fed5, type: 3}
+  rotateSpeed: 6
   rotateSpeedMultiplier: 0.5
 --- !u!1001 &79456156
 PrefabInstance:
@@ -367,6 +371,10 @@ PrefabInstance:
     - target: {fileID: 5405539546265827388, guid: 13ff566620ddfa94ea22afc2efbab5b5, type: 3}
       propertyPath: m_Name
       value: Red Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405539546265827388, guid: 13ff566620ddfa94ea22afc2efbab5b5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5405539546265827390, guid: 13ff566620ddfa94ea22afc2efbab5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -492,8 +500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525031c7ea645664799680d67be3834f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 6
   audioClip: {fileID: 8300000, guid: 3165942fa5e64f94893fb004ad0c8b1a, type: 3}
+  rotateSpeed: 6
   rotateSpeedMultiplier: 2
 --- !u!1 &193302183
 GameObject:
@@ -1014,6 +1022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 5405539546265827388, guid: 13ff566620ddfa94ea22afc2efbab5b5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5405539546265827390, guid: 13ff566620ddfa94ea22afc2efbab5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1121,7 +1133,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1020504778
+--- !u!114 &1020504782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1133,8 +1145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1873ca885a609054aa70ed33cca12bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 6
   audioClip: {fileID: 8300000, guid: eb50ae4393eff6045bce387e13552be5, type: 3}
+  rotateSpeed: 6
 --- !u!1 &1110522670
 GameObject:
   m_ObjectHideFlags: 0

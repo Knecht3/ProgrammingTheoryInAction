@@ -10,7 +10,7 @@ public class UI : MonoBehaviour
     // Save data then exit the game
     public void Exit()
     {
-        if (MainManager.Instance != null)
+        if (MainManager.Instance != null && !MainManager.Instance.isNameTooLong)
         {
             MainManager.Instance.userName = MainManager.Instance.userNameTemp;
             MainManager.Instance.SaveData();

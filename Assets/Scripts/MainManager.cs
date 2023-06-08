@@ -5,9 +5,29 @@ using System.IO;
 
 public class MainManager : MonoBehaviour
 {
-    public static MainManager Instance;
-    public string userNameTemp;
+    // ENCAPSULATION
+    public static MainManager Instance { get; private set; }
+    private string m_userNameTemp;
+    public string userNameTemp
+    {
+        get { return m_userNameTemp; }
+        set
+        {
+            if (value.Length > 9)
+            {
+                isNameTooLong = true;
+                Debug.LogError("Name entered too long!");
+            }
+            else
+            {
+                isNameTooLong = false;
+                m_userNameTemp = value;
+            }
+        }
+    }
+
     public string userName;
+    public bool isNameTooLong;
 
     private void Awake()
     {
@@ -41,6 +61,7 @@ public class MainManager : MonoBehaviour
         public string userName;
     }
 
+    // ABSTRACTION
     public void SaveData()
     {
         Data data = new Data();

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+// INHERITANCE
 public class MenuUI : UI
 {
     public TextMeshProUGUI userNameInputText;
@@ -23,7 +24,10 @@ public class MenuUI : UI
     // Load main scene
     public void StartNew()
     {
-        SceneManager.LoadScene(1);
+        if (!MainManager.Instance.isNameTooLong)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     void GetUserName()
